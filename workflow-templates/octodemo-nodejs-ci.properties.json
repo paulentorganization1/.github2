@@ -1,0 +1,12 @@
+{
+    "name": "Octodemo Organization Node.js Project",
+    "description": "Octodemo Organization CI workflow template.",
+    "iconName": "icon",
+    "categories": [
+        "Node.js",
+        "JavaScript"
+    ],
+    "filePatterns": [
+        "package.json"
+    ]
+}

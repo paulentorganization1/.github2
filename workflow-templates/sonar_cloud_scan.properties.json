@@ -1,0 +1,8 @@
+{
+    "name": "Octodemo SonarCloud Scan",
+    "description": "Octodemo Organization SonarCloud Scan",
+    "iconName": "icon",
+    "categories": [
+        "Code Quality"
+    ]
+}

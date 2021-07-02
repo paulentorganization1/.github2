@@ -1,0 +1,11 @@
+{
+    "name": "Octodemo SonarCloud Scan - Maven",
+    "description": "Octodemo Organization SonarCloud Scan",
+    "iconName": "icon",
+    "categories": [
+        "Code Quality"
+    ],
+    "filePatterns": [
+      "pom.xml"
+    ]
+}

@@ -1,0 +1,36 @@
+name: Octodemo SonarCloud Code Scanning
+
+on:
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - master
+      
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  scan:
+    name: SonarCloud Code Scanning
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    
+    - name: Set Up JDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+        java-package: jdk
+    
+    - name: SonarCloud Scan - Maven
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: mvn -B verify sonar:sonar -D"sonar.login=${{ secrets.SONAR_TOKEN }}"
+      

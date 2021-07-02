@@ -1,0 +1,8 @@
+{
+    "name": "Octodemo Organization Workflow",
+    "description": "Octodemo Organization CI workflow template.",
+    "iconName": "icon",
+    "categories": [
+        "Java"
+    ]
+}
